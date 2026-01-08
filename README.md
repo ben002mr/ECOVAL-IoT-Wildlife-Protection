@@ -9,6 +9,12 @@ The system follows a closed-loop autonomous cycle:
 2. **Edge Processing:** Local logic determines threat levels and triggers a servo-actuated deterrent mechanism with sub-second latency.
 3. **Cloud Intelligence:** Data is published via **MQTT** to **AWS IoT Core** and stored in **Amazon DynamoDB** for long-term hotspot analysis.
 
+### ☁️ Cloud Orchestration & Backend (Logic Summary)
+While the core ingestion is handled via MQTT and the Python ETL script provided in this repo, the backend architecture was supported by:
+* **AWS Lambda:** Triggered by DynamoDB streams to process incoming sensor data and format it into JSON structures.
+* **Amazon API Gateway:** Served as the RESTful endpoint for the mobile application to fetch real-time conflict hotspot data.
+* **Logic:** The Lambda function performed threshold-based filtering to ensure only high-probability conflict events were pushed to the end-user application via JSON payloads.
+
 ## 📂 Repository Structure
 * **📂 hardware/**: Includes `ECOVAL_ESP32_Firmware.ino` (ESP32 control logic) and `secrets.h`.
 * **📂 cloud_integration/**: `ecoval.py` — Python/Boto3 script for data synchronization.
