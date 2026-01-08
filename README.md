@@ -1,7 +1,7 @@
 # ECOVAL: Human-Wildlife Conflict Evaluation System
 
 ## 🌿 Project Vision
-ECOVAL is a Minimum Viable Product (MVP) designed to identify conflict hotspots in forest buffer zones. By monitoring animal behavior and human activity in real-time, the system provides edge-based deterrents and cloud-based analytics to protect both local communities and wildlife.
+ECOVAL is a Minimum Viable Product (MVP) designed to identify and evaluate conflict hotspots in forest buffer zones. By monitoring animal behavior and human activity in real-time, the system provides edge-based deterrents and cloud-based analytics to protect both local communities and wildlife.
 
 ## 🏗️ Technical Architecture
 * **Edge Layer:** ESP32 microcontroller integrated with **PIR** (Motion), **Ultrasonic** (Distance), and **DHT11** (Environmental) sensors.
