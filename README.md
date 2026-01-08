@@ -10,7 +10,7 @@ The system follows a closed-loop autonomous cycle:
 3. **Cloud Intelligence:** Data is published via **MQTT** to **AWS IoT Core** and stored in **Amazon DynamoDB** for long-term hotspot analysis.
 
 ## 📂 Repository Structure
-* **📂 hardware/**: Includes `ECOVAL_Edge_Logic.ino` (ESP32 control logic) and `secrets.h`.
+* **📂 hardware/**: Includes `ECOVAL_ESP32_Firmware.ino` (ESP32 control logic) and `secrets.h`.
 * **📂 cloud_integration/**: `ecoval.py` — Python/Boto3 script for data synchronization.
 * **📂 docs/**: Contains the [**ECOVAL Technical Summary (PDF)**](./docs/ECOVAL_Technical_Summary.pdf) featuring Circuit Diagrams, CAD models, and Logic Flowcharts.
 
